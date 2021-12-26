@@ -28,7 +28,7 @@ public class Main {
         try {
             sharik.changeNameFromInput();
             System.out.println("Name has changed\n"+"New name: "+sharik.getName(sharik));
-        } catch (Exception e) {
+        } catch (FileNotFoundException e) {
             System.err.println("Something went wrong while changing the name of your pet");
             System.err.println(e.getMessage());
         }
